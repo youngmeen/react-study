@@ -3,7 +3,12 @@ import React, {useEffect} from "react";
 function User({user, onRemove, onToggle}) {
     useEffect(() => {
        console.log("컴포넌트 화면에 나타남");
-    });
+       console.log(user);
+       return () => {
+            console.log('컴포넌트 화면에 사라짐');
+            console.log(user);
+       };
+    }, [user]);
     return (
         <div>
             <b style={{cursor: 'pointer', color: user.active ? 'green' : 'black'}}
