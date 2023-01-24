@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.gray-box {
+  background: gray;
+  width: 64px;
+  height: 64px;
+}
+
+.input-controller {
+  margin-right: 5em;
+}
